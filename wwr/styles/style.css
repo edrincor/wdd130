@@ -1,4 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
+body {
+    --heading-font: "Fredoka";
+    --paragraph-font: sans-serif, arial;
+    font-size: 22px;
+    font-family: var(--paragraph-font);
+    background-color: #fcfbfb; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: var(--heading-font);
+    background-color:rgba(20,30,13, .7);
+}
+
+h2 {
+    margin: 0;
+}
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -7,11 +26,15 @@
 .logo {
     width: 80px;
 }
+#logo_link {
+    padding-top: 5px;
+}
 
 nav a {
     text-align: center;
     color: #FAC05E;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -19,31 +42,37 @@ nav a:hover {
     color: #fcfbfb;
 }
 
-.home-title{
+.home-title {
+    font-size: 2em;
+    color: #247BA0;
+    margin-top: 10px;
+}
+
+h4 {
     color: #247BA0;
 }
 
-h4{
-    color: #247BA0;
+.book, .join {
+    background-color: #d9c2a3;
+    color: #fcfbfb;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
-.book {
-    background-color: #fcfbfb;
-    color: #247BA0;
-    text-decoration: none;
-}
-.join {
-    background-color: #FAC05E;
-    color: #247BA0;
-    text-decoration: none;
-}
 .book:hover, .join:hover {
     background-color: #EE6352;
     color: #fcfbfb;
 }
 
 #hero-msg h1, #hero-msg h4 {
+    font-family: var(--heading-font);
     text-align: center;
+}
+#hero-img {
+    width: 100%;
 }
 
 .button-box {
@@ -51,36 +80,49 @@ h4{
 }
 
 main section {
+    font-family: var(--paragraph-font);
     text-align: center;
+}
+main section img {
+    box-sizing: border-box;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #d9c2a3;
 }
 
 #background {
     height: 725px;
-    background-color: #fcfbfb;
-}
-
-body {
-    background-color: #fcfbfb; 
-}
-header {
-    background-color:rgba(20,30,13, .7);
+    background-color: #d9c2a3;
+    margin: 100px 0;
 }
 
 .msg {
-    background-color: #FAC05E;
+    background-color: rgba(20,30,13, .7);
+    line-height: 1.5em;
+    padding: 35px;
+    margin: 200px 0;
 }
 
 .msg h2 {
-    color: black;
+    color: #fcfbfb;
 }
 
 .msg p{
-    color: black;
+    font-family: var(--paragraph-font);
+    color: #fcfbfb;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 footer {
     background-color:rgba(20,30,13, .7);
     color: #fcfbfb;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer p {
@@ -98,6 +140,9 @@ footer a {
 footer a:hover {
     background-color: #EE6352;
     color: #fcfbfb;
+}
+footer .social img {
+    padding-top:  15px;
 }
 
 .icon {
